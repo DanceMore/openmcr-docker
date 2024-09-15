@@ -7,7 +7,7 @@ Dockerizing https://github.com/iansan5653/open-mcr to help my dad
 ## usage
 
 ```
-docker run --rm -it -v "$(pwd)"/input:/input -v "$(pwd)"/output:/output CONTAINER_NAME
+docker run --rm -it -v "$(pwd)"/input:/input -v "$(pwd)"/output:/output ghcr.io/dancemore/dancemore/openmcr-docker --args --args /input /output
 ```
 
 > [!IMPORTANT]
