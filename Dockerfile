@@ -5,10 +5,10 @@ FROM python:3.10
 RUN apt update && apt install -y python3-opencv python3-tk
 
 # non-perm user
-RUN adduser --disabled-password --home=/app --gecos "" app
+RUN adduser --disabled-password --home=/home/app --gecos "" app
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /home/app
+WORKDIR /home/app
 
 # copy project
 ADD requirements.txt .
